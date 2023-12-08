@@ -4,7 +4,7 @@ import copy
 
 Color = Enum('Color', ['vert', 'blanc', 'rouge', 'jaune', 'orange', 'blue'])
 indices = [1, 2, 3, 4]
-n = 4
+n = 2
 
 
 # Now we can define util functions to work on retriving indices of certain columns and rows in a certain order
@@ -183,5 +183,5 @@ def rotation_n(face, axis, angle, state):
                 (axis, direction, order) = contour_data[face][1][j]
                 write_array(abs(direction - 1), axis, contour_indices[j], new_state[contour_face])
             # print(new_state)
-    print(new_state)
+    # print(new_state)
     return new_state
